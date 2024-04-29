@@ -10,14 +10,14 @@ def save_json(file, data):
     with open(file, 'w') as file:
         json.dump(data, file, indent=2)
 
-def find_match(question, questions):
-    matches = get_close_matches(question, questions, n=1, cutoff=0.6)
+# Find close matching query
+def find_match(query, questions):
+    matches = get_close_matches(query, questions, n=1, cutoff=0.6)
     return matches[0] if matches else None
 
-def get_answer(question, data):
-    for query in data["questions"]:
-        if query["question"] == question:
-            return query["question"]
+def get_answer(match, data):
+    for match in data["questions"]:
+        return match['answer']
     return None
 
 def chat_bot():
@@ -46,3 +46,4 @@ def chat_bot():
 
 if __name__ == '__main__':
     chat_bot()
+

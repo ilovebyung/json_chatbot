@@ -1,7 +1,11 @@
 {
   "questions": [
     {
-      "question": "Hello",
+      "question": "What is the capital of Korea?",
+      "answer": "Seoul"
+    },
+    {
+      "question": "What is capital of Korea?",
       "answer": "Seoul"
     },
     {
@@ -9,8 +13,16 @@
       "answer": ""
     },
     {
-      "question": "What is the capital of Korea?",
-      "answer": "Seoul"
+      "question": "",
+      "answer": ""
+    },
+    {
+      "question": "",
+      "answer": ""
+    },
+    {
+      "question": "",
+      "answer": ""
     }
   ]
 }
