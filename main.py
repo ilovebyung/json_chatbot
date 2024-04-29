@@ -42,7 +42,8 @@ def chat_bot():
             if new_answer.lower() != 'skip':
                 data["questions"].append({"question": user_input, "answer": new_answer})
                 save_json("data.json", data)
-                print("Bot: Thank you for teaching me")
+                print("Bot: Thank you for teaching me. Bye!")
+                # break
 
 if __name__ == '__main__':
     chat_bot()
